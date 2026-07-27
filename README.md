@@ -2,7 +2,8 @@
 
 > **From an empty folder to a running web game in less than two minutes.**
 
-[![PyPI Version](https://img.shields.io/pypi/v/newbiegame.svg)](https://pypi.org/project/newbiegame/)
+[![npm Version](https://img.shields.io/npm/v/newbiegame.svg?color=cb3837)](https://www.npmjs.com/package/newbiegame)
+[![PyPI Version](https://img.shields.io/pypi/v/newbiegame.svg?color=3775a9)](https://pypi.org/project/newbiegame/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Hack Club Anvil](https://img.shields.io/badge/Hack%20Club-Anvil%20YSWS-red)](https://anvil.hackclub.com)
 
@@ -12,7 +13,7 @@
 
 ## Quick Start
 
-### 1. Run via `npx`
+### 1. Run via `npx` (npm)
 
 ```bash
 npx newbiegame create
@@ -24,7 +25,14 @@ Or supply flags directly:
 npx newbiegame create my-dino-game --template topdown
 ```
 
-### 2. Run your game
+### 2. Run via Python (`pip` / `uv`)
+
+```bash
+pip install newbiegame
+newbiegame create my-dino-game
+```
+
+### 3. Launch local dev server
 
 ```bash
 cd my-dino-game
@@ -67,4 +75,4 @@ Every generated project includes:
 
 ## Built for Hack Club Anvil
 
-Created for the **Hack Club Anvil YSWS**.
+Created for the **Hack Club Anvil YSWS** ([https://anvil.hackclub.com](https://anvil.hackclub.com)).

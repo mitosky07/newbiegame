@@ -44,8 +44,8 @@ newbiegame = "newbiegame.cli:app"
 
 [project.urls]
 Homepage = "https://anvil.hackclub.com"
-Repository = "https://github.com/hackclub/newbiegame"
-Issues = "https://github.com/hackclub/newbiegame/issues"
+Repository = "https://github.com/mitosky07/newbiegame"
+Issues = "https://github.com/mitosky07/newbiegame/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/newbiegame"]

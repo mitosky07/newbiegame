@@ -34,10 +34,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hackclub/newbiegame.git"
+    "url": "git+https://github.com/mitosky07/newbiegame.git"
   },
   "bugs": {
-    "url": "https://github.com/hackclub/newbiegame/issues"
+    "url": "https://github.com/mitosky07/newbiegame/issues"
   },
   "homepage": "https://anvil.hackclub.com",
   "dependencies": {

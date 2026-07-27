@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.pytest_cache/
+*.tgz
+*.log
+.DS_Store
+Thumbs.db

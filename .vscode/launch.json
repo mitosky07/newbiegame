@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "NewbieGame: Create (Topdown)",
+      "program": "${workspaceFolder}/dist/cli.js",
+      "args": ["create", "my-vscode-game", "--template", "topdown", "--force"],
+      "console": "integratedTerminal",
+      "preLaunchTask": "npm: build"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "NewbieGame: Serve",
+      "program": "${workspaceFolder}/dist/cli.js",
+      "args": ["serve"],
+      "cwd": "${workspaceFolder}/my-vscode-game",
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "NewbieGame: Doctor",
+      "program": "${workspaceFolder}/dist/cli.js",
+      "args": ["doctor"],
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "NewbieGame: Templates",
+      "program": "${workspaceFolder}/dist/cli.js",
+      "args": ["templates"],
+      "console": "integratedTerminal"
+    }
+  ]
+}

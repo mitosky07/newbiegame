@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ project_name }} - Top-down Engine</title>
+  <link rel="stylesheet" href="./src/styles/game.css">
+</head>
+<body>
+  <div class="game-app">
+    <header class="header-card">
+      <h1>{{ project_name }}</h1>
+      <div class="controls-bar">
+        <span>Movement: <kbd class="key-badge">W</kbd> <kbd class="key-badge">A</kbd> <kbd class="key-badge">S</kbd> <kbd class="key-badge">D</kbd> or <kbd class="key-badge">Arrows</kbd></span>
+        <span>|</span>
+        <span>Inspector: <kbd class="key-badge">Tab</kbd></span>
+        <span>|</span>
+        <span>Reset: <kbd class="key-badge">Space</kbd></span>
+      </div>
+    </header>
+
+    <main class="canvas-card">
+      <div class="action-bar">
+        <button id="btn-inspector" class="btn-action">[ Inspector ]</button>
+        <button id="btn-reset" class="btn-action">[ Restart ]</button>
+      </div>
+      <canvas id="game" width="{{ canvas_width }}" height="{{ canvas_height }}"></canvas>
+    </main>
+
+    <div class="dpad-container">
+      <button id="btn-left" class="dpad-btn">LEFT</button>
+      <button id="btn-up" class="dpad-btn">UP</button>
+      <button id="btn-down" class="dpad-btn">DOWN</button>
+      <button id="btn-right" class="dpad-btn">RIGHT</button>
+    </div>
+
+    <footer class="footer-card">
+      <p>Built with NewbieGame Engine for Hack Club Anvil</p>
+    </footer>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

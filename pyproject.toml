@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "newbiegame"
+version = "0.1.0"
+description = "Create beginner-friendly web games from your terminal in under two minutes."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "NewbieGame Team", email = "hackers@hackclub.com" }
+]
+keywords = ["cli", "gamedev", "hackclub", "canvas", "javascript", "education", "beginner"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Education",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Games/Entertainment",
+  "Topic :: Software Development :: Code Generators"
+]
+dependencies = [
+  "typer>=0.12.0",
+  "rich>=13.0.0",
+  "jinja2>=3.1.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0.0",
+  "build>=1.0.0",
+  "twine>=4.0.0"
+]
+
+[project.scripts]
+newbiegame = "newbiegame.cli:app"
+
+[project.urls]
+Homepage = "https://anvil.hackclub.com"
+Repository = "https://github.com/hackclub/newbiegame"
+Issues = "https://github.com/hackclub/newbiegame/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/newbiegame"]
+
+[tool.hatch.build]
+include = [
+  "src/newbiegame/templates/**/*"
+]

@@ -1,0 +1,57 @@
+{
+  "name": "newbiegame",
+  "version": "0.1.0",
+  "description": "Create beginner-friendly 2D web games from your terminal in under 2 minutes.",
+  "main": "./dist/cli.js",
+  "bin": {
+    "newbiegame": "./dist/cli.js",
+    "create-newbiegame": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "templates",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "node dist/cli.js --version",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "create-app",
+    "gamedev",
+    "canvas",
+    "javascript",
+    "hackclub",
+    "anvil",
+    "beginner",
+    "education"
+  ],
+  "author": "NewbieGame Team <hackers@hackclub.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackclub/newbiegame.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hackclub/newbiegame/issues"
+  },
+  "homepage": "https://anvil.hackclub.com",
+  "dependencies": {
+    "@clack/prompts": "^0.8.2",
+    "commander": "^12.1.0",
+    "open": "^10.1.0",
+    "picocolors": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
